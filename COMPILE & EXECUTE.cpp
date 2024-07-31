@@ -17,3 +17,17 @@ int main()
 //$ ./a.out
 //Hello World!
 //$ 
+
+//3/5
+//Compile and Execute (Naming Executables)
+#include <iostream>
+
+int main() 
+{
+  
+  std::cout << "Hello World!\n";
+  
+}
+//Compiling with a custom call name
+//$ g++ hello.cpp -o hello
+//$ ./hello
