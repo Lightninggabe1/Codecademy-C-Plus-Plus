@@ -31,3 +31,16 @@ int main()
 //Compiling with a custom call name
 //$ g++ hello.cpp -o hello
 //$ ./hello
+
+//4/5
+//Comments
+
+//Harry Potter
+#include <iostream>
+
+int main() 
+{
+  
+  std::cout << "Expecto Patronum\n";
+  
+}
