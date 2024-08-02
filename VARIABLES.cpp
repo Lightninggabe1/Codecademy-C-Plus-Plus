@@ -119,3 +119,23 @@ int main() {
   std::cout << "The temp is " << tempc << " degrees Celsius.\n";
   
 }
+
+//10/10
+//Review
+#include <iostream>
+
+int main() {
+  // Add your code below  
+  double item_mass;
+  double item_mars;
+  std::cout << "How much does your item weigh? ";
+  std::cin >> item_mass;
+  item_mars = item_mass*3.72076;
+
+  //Create a program that asks for a distance in miles as input. The program will then output how much that distance is in kilometers.
+  double distance_miles;
+  double kmdistance;
+  std::cout << "How far is your distance in miles? ";
+  std::cin >> distance_miles;
+  kmdistance = distance_miles * 1.60934;
+}
