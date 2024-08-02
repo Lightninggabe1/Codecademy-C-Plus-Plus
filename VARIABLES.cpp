@@ -26,3 +26,18 @@ int main() {
   year = 2019;
    
 }
+
+//4/10
+//Combining Step 1 and Step 2
+#include <iostream>
+
+int main() {
+
+   int score = 0;
+   
+   // Declare and initialize a variable here
+   int year = 2019;
+   
+   return 0;
+   
+}
