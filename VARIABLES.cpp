@@ -85,3 +85,18 @@ int main() {
   
   
 }
+
+//8/10
+//Challenge: Temperature (Part 1)
+#include <iostream>
+
+int main() {
+  double tempf = 84;
+  double tempc;
+  tempc = (tempf - 32) / 1.8;
+  std::cout << "The temp is " << tempc << " degrees Celsius.\n";
+  
+  
+  
+  
+}
