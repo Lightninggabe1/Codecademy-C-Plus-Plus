@@ -50,3 +50,24 @@ int main() {
   std::cout << "Root 1 is " << root1 << "\n";
   std::cout << "Root 2 is " << root2 << "\n";
 }
+
+//Piggy Bank (after Quadratic Formula)
+#include <iostream>
+
+int main() {
+  double pesos;
+  double reais;
+  double soles;
+  double dollars;
+  std::cout << "Enter number of Colombian Pesos: ";
+  std::cin >> pesos;
+  std::cout << "Enter number of Brazilian Reais: ";
+  std::cin >> reais;
+  std::cout << "Enter number of Peruvian Soles: ";
+  std::cin >> soles;
+  // Pesos conversion rate: 0.00025
+  // Reais conversion rate: 0.17
+  // Soles conversion rate: 0.27 
+  dollars = (0.00025 * pesos) + (0.17 * reais) + (0.27 * soles);
+  std::cout << "US Dollars = $" << dollars;
+}
