@@ -29,3 +29,18 @@ int main() {
   }
   
 }
+
+//3/8
+//If Statement
+#include <iostream>
+
+int main() {
+
+  int grade = 90;
+  if (grade > 60) {
+    
+    std::cout << "Pass";
+  }
+  
+  
+}
