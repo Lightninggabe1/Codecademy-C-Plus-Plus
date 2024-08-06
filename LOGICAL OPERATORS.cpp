@@ -16,3 +16,18 @@ int main() {
   }
   
 }
+
+//3/5
+//Logical Operator: II
+#include <iostream>
+
+int main() {
+  
+  int day = 6;
+  
+  // Write the code below:
+  if (day == 6 || day ==7) {
+    std::cout << "Weekend";
+  }
+
+}
