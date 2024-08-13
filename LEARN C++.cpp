@@ -309,3 +309,214 @@ if (slytherin > max) {
 
 std::cout << house << "!\n";
 }
+
+
+
+//Rock, Paper, Scissors, Lizard, Spock (after Harry Potter Sorting Hat Quiz)
+
+
+//Rock > Scissors; Rock > Lizard
+//Lizard > Spock; Lizard > Paper
+//Spock > Rock; Spock > Scissors
+//Scissors > Paper; Scissors > Lizard
+//Paper > Spock; Paper > Rock
+/*
+Rock Paper Scissors Lizard Spock Game
+(From The Big Bang Theory)
+*/
+#include <iostream>
+#include <stdlib.h>
+int main() {
+  
+  // Live long and prosper
+  srand (time(NULL));
+  
+  int computer = rand() % 3 + 1;
+
+  int user = 0;
+  std::cout << "====================\n";
+  std::cout << "rock paper scissors!\n";
+  std::cout << "====================\n";
+
+  std::cout << "1) ✊\n";
+  std::cout << "2) ✋\n";
+  std::cout << "3) ✌️\n";
+  std::cin >> user;
+  std::cout << "Shoot! \n";
+  std::cout << "You: " << user << "\n";
+  std::cout << "Computer: " << computer << "\n";
+  if (user == 1 && computer == 2) {
+    std::cout << "The computer won!\n";
+  }
+  else if (user == 1 && computer ==1) {
+    std::cout << "It is a tie!\n";
+  }
+  else if (user == 2 && computer ==2) {
+    std::cout << "It is a tie!\n";
+  }
+  else if (user == 3 && computer ==3) {
+    std::cout << "It is a tie!\n";
+  }
+  else if (user == 1 && computer ==3) {
+    std::cout << "You win!\n";
+  }
+  else if (user == 3 && computer ==2) {
+    std::cout << "You win!\n";
+  }
+  else if (user == 2 && computer ==1) {
+    std::cout << "You win!\n";
+  }
+  else if (user == 2 && computer ==3) {
+    std::cout << "The computer won!\n";
+  }
+  else if (user == 3 && computer ==1) {
+    std::cout << "The computer won!\n";
+  }
+  //Rock > Scissors; Rock > Lizard
+  //Lizard > Spock; Lizard > Paper
+  //Spock > Rock; Spock > Scissors
+  //Scissors > Paper; Scissors > Lizard
+  //Paper > Spock; Paper > Rock
+  /*
+  Rock Paper Scissors Lizard Spock Game
+  (From The Big Bang Theory)
+  */
+  // Live long and prosper
+  srand (time(NULL));
+  
+  int computerrpsls = rand() % 5 + 1;
+
+  int userrpsls = 0;
+  std::cout << "====================\n";
+  std::cout << "rock paper scissors lizard spock!\n";
+  std::cout << "====================\n";
+
+  std::cout << "1) ✊\n";
+  std::cout << "2) ✋\n";
+  std::cout << "3) ✌️\n";
+  std::cout << "4) 🤏\n";
+  std::cout << "5) 👈\n";
+  std::cin >> userrpsls;
+  std::cout << "Shoot! \n";
+  //Userrpsls == Rock
+  if (userrpsls == 1 && computerrpsls ==1) {
+    std::cout << "You: ✊\n";
+    std::cout << "Computer: ✊\n";
+    std::cout << "It is a tie!\n";
+  }
+  else if (userrpsls == 1 && computerrpsls == 2) {
+    std::cout << "You: " << userrpsls << " ✊\n";
+    std::cout << "Computer: " << computerrpsls << " ✋\n";
+    std::cout << "The computer won!\n";
+  }
+  else if (userrpsls == 1 && computerrpsls == 5) {
+    std::cout << "You: " << userrpsls << " ✊\n";
+    std::cout << "Computer: 👈\n";
+    std::cout << "The computer won!\n";
+  }
+  else if (userrpsls == 1 && computerrpsls ==3) {
+    std::cout << "You: ✊\n";
+    std::cout << "Computer: ✌️\n";
+    std::cout << "You win!\n";
+  }
+  else if (userrpsls == 1 && computerrpsls == 4) {
+    std::cout << "You: ✊\n";
+    std::cout << "Computer: 🤏\n";
+    std::cout << "You win!\n";
+  }
+  //Userrpsls == Paper
+  else if (userrpsls == 2 && computerrpsls == 2) {
+    std::cout << "You: ✋\n";
+    std::cout << "Computer: ✋\n";
+    std::cout << "It is a tie!\n";
+  }
+  else if (userrpsls == 2 && computerrpsls == 1) {
+    std::cout << "You: ✋\n";
+    std::cout << "Computer: ✊\n";
+    std::cout << "You win!\n";
+  }
+  else if (userrpsls == 2 && computerrpsls == 5) {
+    std::cout << "You: ✋\n";
+    std::cout << "Computer: 👈\n";
+    std::cout << "You win!\n";
+  }
+  else if (userrpsls == 2 && computerrpsls ==3) {
+    std::cout << "You: ✋\n";
+    std::cout << "Computer: ✌️\n";
+    std::cout << "The computer won!\n";
+  }
+  else if (userrpsls == 2 && computerrpsls ==3) {
+    std::cout << "You: ✋\n";
+    std::cout << "Computer: 🤏\n";
+    std::cout << "The computer won!\n";
+  }
+  //Userrpsls == Scissors
+  else if (userrpsls == 3 && computerrpsls ==3) {
+    std::cout << "You: ✌️\n";
+    std::cout << "Computer: ✌️\n";
+    std::cout << "It is a tie!\n";
+  }
+  else if (userrpsls == 3 && computerrpsls ==1) {
+    std::cout << "You: ✌️\n";
+    std::cout << "Computer: ✊\n";
+    std::cout << "The computer won!\n";
+  }
+  else if (userrpsls == 3 && computerrpsls == 5) {
+    std::cout << "You: ✌️\n";
+    std::cout << "Computer: 👈\n";
+    std::cout << "The computer won!\n";
+  }
+  else if (userrpsls == 3 && computerrpsls ==2) {
+    std::cout << "You: ✌️\n";
+    std::cout << "Computer: ✋\n";
+    std::cout << "You win!\n";
+  }
+  else if (userrpsls == 3 && computerrpsls ==2) {
+    std::cout << "You: ✌️\n";
+    std::cout << "Computer: 🤏\n";
+    std::cout << "You win!\n";
+  }
+  //Userrpsls == Lizard
+  else if (userrpsls == 4 && computerrpsls ==5) {
+    std::cout << "You: 🤏\n";
+    std::cout << "Computer: 👈\n";
+    std::cout << "You win!\n";
+  }
+  else if (userrpsls == 4 && computerrpsls == 3) {
+    std::cout << "You: 🤏\n";
+    std::cout << "Computer: ✌️\n";
+    std::cout << "You win!\n";
+  }
+  else if (userrpsls == 4 && computerrpsls ==2) {
+    std::cout << "You: 🤏\n";
+    std::cout << "Computer: ✋\n";
+    std::cout << "The computer won!\n";
+  }
+  else if (userrpsls == 4 && computerrpsls ==1) {
+    std::cout << "You: 🤏\n";
+    std::cout << "Computer: ✊\n";
+    std::cout << "The computer won!\n";
+  }
+  //Userrpsls == Spock
+  else if (userrpsls == 5 && computerrpsls ==4) {
+    std::cout << "You: 👈\n";
+    std::cout << "Computer: ✊\n";
+    std::cout << "You win!\n";
+  }
+  else if (userrpsls == 5 && computerrpsls == 3) {
+    std::cout << "You: 👈\n";
+    std::cout << "Computer: ✌️\n";
+    std::cout << "You win!\n";
+  }
+  else if (userrpsls == 5 && computerrpsls ==2) {
+    std::cout << "You: 👈\n";
+    std::cout << "Computer: ✋\n";
+    std::cout << "The computer won!\n";
+  }
+  else if (userrpsls == 5 && computerrpsls ==1) {
+    std::cout << "You: 👈\n";
+    std::cout << "Computer: 🤏\n";
+    std::cout << "The computer won!\n";
+  }
+}
+
