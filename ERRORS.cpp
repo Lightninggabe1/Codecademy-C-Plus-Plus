@@ -63,3 +63,36 @@ int main() {
   std::cout << ratio << "\n";
   
 }
+
+//Logic Errors 5/6
+//steps.cpp
+#include <iostream>
+
+int main() {
+  
+  // Output from 1 to steps:
+  
+  int steps = 10;
+  
+  for (int i = 1; i <= steps; i++) {
+    
+    std::cout << "Step #";
+    std::cout << i << "\n";
+    
+  }
+  //guess.cpp
+  // Output from 1 to steps:
+  
+  int steps;
+  
+  std::cout << "Enter # steps: ";
+  std::cin >> steps;
+  
+  for (int i = 0; i <= steps; i++) {
+    
+    std::cout << "Step #";
+    std::cout << i << "\n";
+    
+  }
+  
+}
