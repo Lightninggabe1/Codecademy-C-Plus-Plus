@@ -543,3 +543,54 @@ int main() {
 
 }
 }
+
+//Build a Text Adventure (after ERRORS.cpp)
+#include <iostream>
+
+int main() {
+
+    std::string gender = "";
+    std::cout << "Are you a: 1) male or a 2) female? ";
+    std::cin >> gender;
+    if (gender == "2") {
+      gender = "witch";
+    }
+    else if (gender == "1") {
+      gender = "wizard";
+    }
+    std::cout << "\n\n";
+    std::cout << "⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯";
+    std::cout << "\n\n The Dark Ages have begun. You are a aspiring young " << gender << " living in the medieval town of Stratford-upon-Avon. \n";
+    std::cout << "Most people don't hunt wizards; some coexist with witches. However, the Institut d'anti-sorcellerie, who has crossed over from France, is against the practice of magic.\n";
+    std::cout << "One day, you come across the queer young boy whose name is Edard, one who people usually avoid.\n";
+    std::string choice1 = "";
+    std::cout << "\n'The Institut dost approach,' he says. You have two choices now. You can warn the other wizards, lessening your escape time; or you can run and save yourselves.\n";
+    std::cout << "Which option will you take? Warn? or run?";
+    std::cin >> choice1;
+    for (int i =0; i=1;){
+      if (choice1 == "Run" or "run" or "RUn" or "rUn"){
+        std::string choice2bracket1 = "";
+        std::cout << "You and Edard ran from the village, leaving the village behind.\n";
+        std::cout << "However, as you do so, the knights rush closer, so you have no chance of escaping that way. Thus, you return to the town.\n";
+        std::cout << "You have two choices, tell them, or don't.";
+        std::cin >> choice2bracket1;
+        if (choice2bracket1 == "tell" or "Tell" or "Tell them" or "tell them"){
+          i++;
+        }
+        else if (choice2bracket1 == "don't tell" or "Don't tell" or "dont tell" or "Dont tell"){
+          std::cout << "You don't tell them but they find out anyway. You are caught by the wizards and banished. \n\n\n\n";
+          std::cout << "You got the ending 'Banished!' 🎉🎉🎉🎊🎊🎊🎊🎊🎉🎉🎉";
+          return 0;
+        }
+        else{
+          std::cout << "Invalid input. Please enter 'Tell', 'tell', 'Dont tell' or 'Don't tell'";
+        }
+      }
+    }
+    std::cout << "\n You warned the others about the approaching Institut. 'What?' Rolf exclaims. 'Disapparate! Quickly!' the wizard mayor says. 'Shall not the Muggles take heed?' shouted an elderly woman.\n\n";
+    std::cout << "'Cursed be those Muggles! Disapparate!' Cracks of sound erupt as minors go with elders for Side-Along-Apparition, bachelors disappear, and Muggles look out of their windows.";
+    
+    std::string choice2 = "";
+    std::cout << "You have two choices now. You can Disapparate into another town, or Disapparate into a grassland. Which do you choose? Grassland? or town?\n";
+    std::cin >> choice2;
+}
