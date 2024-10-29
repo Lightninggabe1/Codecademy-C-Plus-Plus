@@ -594,3 +594,46 @@ int main() {
     std::cout << "You have two choices now. You can Disapparate into another town, or Disapparate into a grassland. Which do you choose? Grassland? or town?\n";
     std::cin >> choice2;
 }
+
+
+
+//Whale Talk (after VECTORS.cpp)
+#include <iostream>
+#include <vector>
+#include <string>
+
+int main() {
+
+  // Whale, whale, whale.
+  // What have we got here?
+  std::string input = "a WhALe of a deal!";
+  std::vector<char> vowels;
+  vowels.push_back('a');
+  vowels.push_back('e');
+  vowels.push_back('i');
+  vowels.push_back('o');
+  vowels.push_back('u');
+  vowels.push_back('A');
+  vowels.push_back('E');
+  vowels.push_back('I');
+  vowels.push_back('O');
+  vowels.push_back('U');
+
+  std::vector<char> result; 
+  for (int i=0; i < input.size(); i++){
+    for (int j=0; j < vowels.size(); j++){
+      if (input[i] == vowels[j]) {
+        result.push_back(input[i]);
+      }
+    }
+    if (input[i] == 'u' || input[i] == 'e') {
+      result.push_back(input[i]);
+    }
+    if (input[i] == '!' || input[i] == '?' || input[i] == '.' || input[i] == ',') {
+      result.push_back(input[i]);
+    }
+  }
+  for (int k = 0; k < result.size(); k++) {
+    std::cout << result[k];   
+  }
+}
