@@ -65,3 +65,20 @@ int main() {
   std::cout << last_jedi[3] << " ";
   
 }
+
+//6/8: .size()
+#include <iostream>
+#include <vector>
+
+int main() {
+  
+  std::vector<std::string> grocery = {"Hot Pepper Jam", "Dragon Fruit", "Brussel Sprouts"};
+    
+  // Add more 
+  grocery.push_back("Artichoke");
+  grocery.push_back("Tomato");
+  
+  std::cout << grocery.size();
+  
+  
+}
