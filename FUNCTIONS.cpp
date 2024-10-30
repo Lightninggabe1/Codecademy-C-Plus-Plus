@@ -77,3 +77,5 @@ int main() {
   std::cout << needs_it_support();
   
 }
+
+//6/10: How Return Values Work
