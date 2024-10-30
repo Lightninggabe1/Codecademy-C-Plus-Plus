@@ -39,3 +39,20 @@ int main() {
   int the_amazing_random_number = rand() % 29;
   std::cout << the_amazing_random_number;
 }
+
+//3/10: Declare & Define
+
+//4/10: Void - The Point of No Return
+#include <iostream>
+
+// Define oscar_wilde_quote() below:
+void oscar_wilde_quote() {
+  std::cout << "The highest, as the lowest, form of criticism is a mode of autobiography.";
+}
+
+int main() {
+  
+  // Call your function here:
+  oscar_wilde_quote();
+  
+}
