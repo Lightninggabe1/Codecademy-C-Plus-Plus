@@ -122,3 +122,5 @@ int main() {
   name_x_times(my_name, some_number);
   
 }
+
+//9/10: How Parameters & Arguments Work
