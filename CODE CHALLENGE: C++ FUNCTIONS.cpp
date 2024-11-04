@@ -45,3 +45,21 @@ int main() {
   std::cout << tenth_power(2) << "\n";
   
 }
+
+//5/7: First Three Multiples
+#include <iostream>
+#include <vector>
+
+// Define first_three_multiples() here:
+std::vector <int> first_three_multiples(int num) {
+   std::vector <int> n = {num, num*2, num*3};
+   return n;
+}
+
+int main() {
+  
+  for (int element : first_three_multiples(8)) {
+    std::cout << element << "\n";
+  }
+  
+}
