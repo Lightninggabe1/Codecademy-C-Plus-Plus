@@ -117,3 +117,5 @@ int main() {
   std::cout << fancy_number(13.5, 3.8) << "\n";
   
 }
+
+//7/9: Function Templates
