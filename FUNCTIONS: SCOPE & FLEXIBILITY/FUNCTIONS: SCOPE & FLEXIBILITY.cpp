@@ -84,3 +84,24 @@ int main() {
   std::cout << goodnight2("eraser", "ivy");
   
 }
+
+//5/9: Default Arguments
+#include <iostream>
+
+#include "coffee.hpp"
+
+int main() {
+  
+  // coffee black
+  std::cout << make_coffee();
+  
+  // coffee with milk
+  std::cout << make_coffee(true);
+  
+  // coffee with milk and sugar
+  std::cout << make_coffee(true, true);
+  
+  // coffee with sugar
+  std::cout << make_coffee(false, true);
+  
+}
