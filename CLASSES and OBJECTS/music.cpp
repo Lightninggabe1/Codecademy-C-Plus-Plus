@@ -44,3 +44,13 @@ int main() {
   Song back_to_black("Back to Black", "Amy Winehouse");
   
 }
+
+//6/7: Destructors
+#include <iostream>
+#include "song.hpp"
+
+int main() {
+
+  Song back_to_black("Back to Black", "Amy Winehouse");
+    
+}
