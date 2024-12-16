@@ -34,3 +34,13 @@ int main() {
   electric_relaxation.add_artist("A Tribe Called Quest");
   std::cout << electric_relaxation.get_artist();
 }
+
+//5/7: Constructors
+#include <iostream>
+#include "song.hpp"
+
+int main() {
+
+  Song back_to_black("Back to Black", "Amy Winehouse");
+  
+}
