@@ -48,3 +48,18 @@ int main() {
   std::cout << square(side) << "\n";
 
 }
+
+//5/9: Memory Address
+#include <iostream>
+
+int main() {
+  
+  int power = 9000;
+  
+  // Print power
+  std::cout << power << "\n";
+  
+  // Print &power
+  std::cout << &power;
+  
+}
