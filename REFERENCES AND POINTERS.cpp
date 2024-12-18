@@ -31,3 +31,20 @@ int main() {
   std::cout << triple(num) << "\n";
 
 }
+
+//4/9: Pass-By-Reference with Const
+#include <iostream>
+
+int square(int const &i) {
+
+  return i * i;
+
+}
+
+int main() {
+  
+  int side = 5;
+  
+  std::cout << square(side) << "\n";
+
+}
