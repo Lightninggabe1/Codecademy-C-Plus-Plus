@@ -78,3 +78,21 @@ int main() {
   std::cout << ptr;
   
 }
+
+//7/9: Dereference
+#include <iostream>
+
+int main() {
+  
+  int power = 9000;
+  
+  // Create pointer
+  int* ptr = &power;
+  
+  // Print ptr
+  std::cout << ptr << "\n";
+  
+  // Print *ptr
+  std::cout << *ptr;
+  
+}
