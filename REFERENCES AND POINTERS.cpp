@@ -63,3 +63,18 @@ int main() {
   std::cout << &power;
   
 }
+
+//6/9: Pointers
+#include <iostream>
+
+int main() {
+  
+  int power = 9000;
+  
+  // Create pointer
+  int* ptr = &power;
+  
+  // Print ptr
+  std::cout << ptr;
+  
+}
